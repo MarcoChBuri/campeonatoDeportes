@@ -12,6 +12,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/sistemaDeportes.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Campeonato/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Campeonato/migrations/0002_encuentro.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Campeonato/migrations/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Equipo/migrations/0001_initial.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Equipo/migrations/__init__.py" afterDir="false" />

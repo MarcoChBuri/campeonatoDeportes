@@ -57,6 +57,36 @@ class Encuentro(models.Model):
         if self.golesVisitante < 0:
             raise ValidationError("El número de goles del equipo visitante no puede ser negativo")
 
+    def save(self, *args, **kwargs):
+        self.calculate_result()
+        super().save(*args, **kwargs)
+        self.update_tabla_posiciones()
+
+    def calcularResultado(self):
+        if self.golesLocal > self.golesVisitante:
+            self.resultado = Resultado.GANADO
+        elif self.golesLocal < self.golesVisitante:
+            self.resultado = Resultado.PERDIDO
+        else:
+            self.resultado = Resultado.EMPATADO
+
+    def actualizar(self):
+        equipos = [self.equipoLocal, self.equipoVisitante]
+        puntos = {self.equipoLocal: 0, self.equipoVisitante: 0}
+
+        if self.resultado == Resultado.GANADO:
+            puntos[self.equipoLocal] = 3
+        elif self.resultado == Resultado.PERDIDO:
+            puntos[self.equipoVisitante] = 3
+        elif self.resultado == Resultado.EMPATADO:
+            puntos[self.equipoLocal] = 1
+            puntos[self.equipoVisitante] = 1
+
+        for equipo in equipos:
+            tabla_posicion, created = TablaPosiciones.objects.get_or_create(campeonato=self.campeonato, equipo=equipo)
+            tabla_posicion.puntos += puntos[equipo]
+            tabla_posicion.save()
+
     def __str__(self):
         if self.golesLocal > self.golesVisitante:
             return f"{self.equipoLocal.nombre} ganó contra {self.equipoVisitante.nombre}"
@@ -64,3 +94,14 @@ class Encuentro(models.Model):
             return f"{self.equipoVisitante.nombre} ganó contra {self.equipoLocal.nombre}"
         else:
             return f"Empate entre {self.equipoLocal.nombre} y {self.equipoVisitante.nombre}"
+
+class TablaPosiciones(models.Model):
+    campeonato = models.ForeignKey(Campeonato, on_delete=models.CASCADE)
+    equipo = models.ForeignKey("Equipo.Equipo", on_delete=models.CASCADE)
+    puntos = models.IntegerField(default=0)
+
+    class Meta:
+        unique_together = ('campeonato', 'equipo')
+
+    def __str__(self):
+        return f"{self.equipo.nombre} - {self.puntos} puntos en {self.campeonato.nombre}"
