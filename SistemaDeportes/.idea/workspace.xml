@@ -13,6 +13,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Campeonato/migrations/0001_initial.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Campeonato/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Equipo/migrations/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Estadisticas/migrations/0001_initial.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Estadisticas/migrations/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Persona/migrations/0001_initial.py" afterDir="false" />
@@ -100,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1722720429793</updated>
       <workItem from="1722720434846" duration="23000" />
-      <workItem from="1722720612397" duration="1140000" />
+      <workItem from="1722720612397" duration="1518000" />
     </task>
     <servers />
   </component>
