@@ -11,22 +11,29 @@
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sistemaDeportes.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Campeonato/forms.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Campeonato/migrations/0001_initial.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Campeonato/migrations/0002_encuentro.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Campeonato/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Campeonato/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Equipo/migrations/0001_initial.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Equipo/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Equipo/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Estadisticas/migrations/0001_initial.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Estadisticas/migrations/0002_estadisticasequipo.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Estadisticas/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Estadisticas/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Persona/forms.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Persona/migrations/0001_initial.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Persona/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Persona/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SistemaDeportes/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SistemaDeportes/asgi.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SistemaDeportes/settings.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SistemaDeportes/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SistemaDeportes/wsgi.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Persona.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
