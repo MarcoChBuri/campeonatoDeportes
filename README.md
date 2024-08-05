@@ -3,8 +3,12 @@
 
 sitema de depostes
 para poder utilizar el sistem primero
+
 --clonar el repositorio
+
 --depues intalar el reuriments con (pip install -r requirements.txt)
+
+
 -- depues correr el servidor 
 y utilizar la interfaz
 el usuario el Marco  y clave 1234
